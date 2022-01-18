@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4" class="result">
+                        <p style="text-align: end;" id="equation"> </p>
+                        <p style="text-align: end;" id="result"> </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="operator">
+                    <td id="plus" onclick="setNum('+')">+</td>
+                    <td id="minus" onclick="setNum('-')">-</td>
+                    <td id="multi" onclick="setNum('*')">*</td>
+                    <td id="devide" onclick="setNum('/')">/</td>
+                </tr>
+                <tr class="numbers">
+                    <td id="seven" onclick="setNum(7)">7</td>
+                    <td id="eight" onclick="setNum(8)">8</td>
+                    <td id="nine" onclick="setNum(9)">9</td>
+                    <td rowspan="5" onclick="execute()" class="equal">=</td>
+                </tr>
+                <tr class="numbers">
+                    <td id="four" onclick="setNum(4)">4</td>
+                    <td id="five" onclick="setNum(5)">5</td>
+                    <td id="six" onclick="setNum(6)">6</td>
+                </tr>
+                <tr class="numbers">
+                    <td id="one" onclick="setNum(1)">1</td>
+                    <td id="two" onclick="setNum(2)">2</td>
+                    <td id="three" onclick="setNum(3)">3</td>
+                </tr>
+                <tr class="numbers">
+                    <td id="zero" onclick="setNum(0)">0</td>
+                    <td id="point" onclick="setNum('.')">.</td>
+                    <td id="clear" onclick="clearData()">C</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <script src="JS/FirstIdea.js"></script> -->
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

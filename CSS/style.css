@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #073237;
+    object-fit:fill;
+    background-position:center;
+    height: 100vh;
+    position: relative;
+}
+table{
+    width: 600px; 
+    height: 70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    /* border: 1px groove black; */
+    border-radius: 25px;
+    overflow: hidden;
+  
+    text-align: center;
+    color:  wheat;
+    background-color: rgb(65, 65, 65);
+}
+table td{
+    /* border: 1px solid grey;
+    border-radius: 5px; */
+    padding: 0;
+    
+}
+table td:hover{
+    background-color: rgba(169, 169, 169, 0.555);
+}
+table .result{
+    background-color: #01090A;
+    color: white;
+   
+    height: 100px;
+    font-size: 3rem;
+    padding: 10px;
+   
+    /* border:1px solid; */
+}
+
+table .operator,.numbers{
+    font-size: 3rem;
+   
+}
+table .operator{
+    background-color: orange;
+}
+.equal{
+    background-color: orangered;
+    color: honeydew;
+}
+.equal:hover{
+    background-color:rgb(199, 59, 8);
+}
